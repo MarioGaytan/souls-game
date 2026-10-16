@@ -1,0 +1,6 @@
+.claude/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.code-workspace
+.history/

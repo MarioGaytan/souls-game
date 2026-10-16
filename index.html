@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0c0716">
+<meta name="description" content="Cenizas de Umbraterra — un juego de acción estilo souls en pixel art que corre en el navegador.">
+<title>Cenizas de Umbraterra</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230c0716'/%3E%3Cpath d='M8 2c2 3 4 5 2 9-1 2-3 2-4 0-2-4 0-6 2-9z' fill='%23ff8a2a'/%3E%3Cpath d='M8 7c1 1 2 3 0 5-2-2-1-4 0-5z' fill='%23ffe08a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body>
+<canvas id="game"></canvas>
+
+<div id="title" class="ov">
+  <div class="logo">
+    <div class="pre">— un juego de almas —</div>
+    <h1>CENIZAS DE<br>UMBRATERRA</h1>
+    <div class="tag">El eclipse devoró el sol. Cinco señores guardan las Grandes Almas que sellan su trono.</div>
+  </div>
+  <div id="titleBox" class="col"></div>
+  <div class="foot">Esquiva · Aprende sus patrones · Muere · Vuelve a intentarlo</div>
+</div>
+
+<div id="panel" class="ov dim hidden"><div id="panelBox" class="box"></div></div>
+
+<div id="touch" class="hidden">
+  <div id="joyZone"></div>
+  <div id="joy"><div id="knob"></div></div>
+  <div class="tbtns">
+    <button data-k="KeyJ" class="tb big atk">ATACAR</button>
+    <button data-k="KeyK" class="tb heavy">FUERTE</button>
+    <button data-k="Space" class="tb roll">RODAR</button>
+    <button data-k="KeyQ" class="tb flask" id="tFlask">FRASCO</button>
+    <button data-k="KeyF" class="tb item" id="tItem">OBJETO</button>
+    <button data-k="KeyR" class="tb sm swap">⇄</button>
+    <button data-k="KeyE" class="tb use">E</button>
+    <button data-k="Tab" class="tb lock">FIJAR</button>
+    <button data-k="run" class="tb run">CORRER</button>
+  </div>
+  <div class="ttop"><button data-k="KeyM" class="tb sm">MAPA</button><button data-k="Escape" class="tb sm">MENÚ</button></div>
+</div>
+
+<div id="rotate"><div class="ph">📱</div><div>Gira el teléfono para jugar</div></div>
+
+<script src="js/sprites.js?v=1"></script>
+<script src="js/data.js?v=1"></script>
+<script src="js/audio.js?v=1"></script>
+<script src="js/world.js?v=1"></script>
+<script src="js/entities.js?v=1"></script>
+<script src="js/game.js?v=1"></script>
+<script src="js/ui.js?v=1"></script>
+<script src="js/touch.js?v=1"></script>
+</body>
+</html>
